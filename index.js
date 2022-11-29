@@ -14,6 +14,8 @@ const btnSelecionar = () => {
     obetnerDatos(segundo_pokemon, 2);
 };
 
+btnSelecionar();
+
 const lista = document.getElementById('mostrarPokemon');
 
 const mostrarPokemon = (data, number) => {
