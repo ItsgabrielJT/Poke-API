@@ -22,6 +22,15 @@ const mostrarPokemon = (data, number) => {
     let card = lista.querySelector(`#pok-${number}`);
     card.getElementsByTagName('img')[0].setAttribute('src', data.sprites.front_default);
     card.getElementsByTagName('h2')[0].innerHTML = data.name;
+
+    let pokeUno = ''
+
+    for(let i=0; i<data.abilities.length;i++)
+    {
+      pokeUno += `<div class="badge badge-secondary badge-outline" id="abl-2-2">${data.abilities[i].ability.name}</div><br>`
+    }
+    console.log(pokeUno);
+    card.getElementsByTagName(`span`)[0].innerHTML = pokeUno;
 }
 
 const boton = document.getElementById('seleccionar');
