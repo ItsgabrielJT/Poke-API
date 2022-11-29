@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon API</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <html data-theme="night"></html>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar bg-secondary text-primary-content">
+        <a class="btn btn-ghost normal-case text-xl">Pokemon API</a>
+      </div>
+    </header>
+    <main>
+      <div class="flex flex-wrap place-content-center" id="mostrarPokemon">
+        <div class="card w-96 bg-base-100 m-20 shadow-xl" id="pok-1">
+          <figure>
+            <img>
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title"></h2>
+            <p class="m-8"></p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline" id="abl-1"></div>
+              <div class="badge badge-secondary badge-outline" id="abl-2"></div>
+              <div class="badge badge-outline" id="abl-3"></div>
+              <div class="badge badge-primary badge-outline" id="abl-4"></div>
+            </div>
+          </div>
+        </div>
+        <kbd class="kbd">VS</kbd>
+        <div class="card w-96 bg-base-100 m-20 shadow-xl" id="pok-2">
+          <figure>
+            <img>
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title"></h2>
+            <p class="m-8"></p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline" id="abl-1"></div>
+              <div class="badge badge-secondary badge-outline" id="abl-2"></div>
+              <div class="badge badge-outline" id="abl-3"></div>
+              <div class="badge badge-primary badge-outline" id="abl-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btm-nav">
+        <button class="bg-primary text-blue-700" id="seleccionar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m13.775 22l-3.625-7.8L6 20V2l14 11h-7.1l3.6 7.725Z"
+            />
+          </svg>
+          <span class="btm-nav-label">Seleccionar</span>
+        </button>
+        <button class="active bg-neutral text-neutral-content">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 256 256"
+          >
+            <path
+              fill="currentColor"
+              d="M216 48h-40v-8a24.1 24.1 0 0 0-24-24h-48a24.1 24.1 0 0 0-24 24v8H40a8 8 0 0 0 0 16h8v144a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16V64h8a8 8 0 0 0 0-16ZM112 168a8 8 0 0 1-16 0v-64a8 8 0 0 1 16 0Zm48 0a8 8 0 0 1-16 0v-64a8 8 0 0 1 16 0Zm0-120H96v-8a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8Z"
+            />
+          </svg>
+          <span class="btm-nav-label">Vaciar</span>
+        </button>
+        <button class="bg-secondary text-purple-700">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m13.75 10.19l.63.13l4.17 2.08c.7.23 1.16.92 1.1 1.66v.26l-.9 6.12c-.06.43-.25.83-.6 1.11c-.31.3-.72.45-1.15.45h-6.88c-.49 0-.94-.18-1.27-.53L2.86 15.5l.9-1c.24-.25.62-.39.98-.37h.29L9 15V4.5a2 2 0 0 1 2-2a2 2 0 0 1 2 2v5.69h.75Z"
+            />
+          </svg>
+          <span class="btm-nav-label">Escoger</span>
+        </button>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
